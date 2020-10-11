@@ -59,7 +59,7 @@ public class Libro extends Escrito {
 	
 	public int palabrasTotales(int palabrasPagina) {
 		int x;
-		x= this.getPaginas()*2;
+		x= this.getPaginas()*2*palabrasPagina;
 		return x;
 	}
 
