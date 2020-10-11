@@ -14,8 +14,8 @@ public class Fabula extends Escrito {
 	}
 
 
-	public void setEnsenanza(String enseñanza) {
-		this.ensenanza = enseñanza;
+	public void setEnsenanza(String ensenanza) {
+		this.ensenanza = ensenanza;
 	}
 
 
