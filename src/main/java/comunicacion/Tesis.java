@@ -1,5 +1,4 @@
 package comunicacion;
-import java.util.*;
 
 public class Tesis extends Escrito {
 	private String idea;
@@ -12,7 +11,7 @@ public class Tesis extends Escrito {
 			String referencias, String interpretacion) {
 		super(origen, titulo, autor, paginas);
 		this.idea = idea;
-		this.argumentos=argumentos;
+		Tesis.argumentos=argumentos;
 		this.conclusion = conclusion;
 		this.referencias = referencias;
 		this.interpretacion = interpretacion;
@@ -82,7 +81,7 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		String x= this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+
-				this.getPaginas()+"\n"+this.idea+"\n"+this.argumentos+"\n"+this.conclusion+
+				this.getPaginas()+"\n"+this.idea+"\n"+Tesis.argumentos+"\n"+this.conclusion+
 				"\n"+this.referencias;
 		return x;
 	}
